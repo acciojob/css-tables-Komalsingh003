@@ -1,16 +1,77 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styled Table</title>
+
+<style>
+    table {
+        border-collapse: separate;
+        border-spacing: 0 10px; /* space between rows */
+        margin: 40px auto;
+        font-family: Arial, sans-serif;
+        width: 500px;
+    }
+
+    th, td {
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 12px;
+        background: #fff;
+        font-size: 18px;
+    }
+
+    th {
+        font-weight: bold;
+        font-size: 20px;
+        background: #ffffff;
+    }
+
+    /* odd rows */
+    tbody tr:nth-child(odd) td {
+        background-color: #f2f2f2;
+    }
+
+    /* even rows */
+    tbody tr:nth-child(even) td {
+        background-color: #ffffff;
+    }
+</style>
 </head>
 
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+
+<table>
+    <thead>
+        <tr>
+            <th>Table-Header 1</th>
+            <th>Table-Header 2</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Cell 1</td>
+            <td>Cell 2</td>
+        </tr>
+
+        <tr>
+            <td>Cell 4</td>
+            <td>Cell 5</td>
+        </tr>
+
+        <tr>
+            <td>Cell 7</td>
+            <td>Cell 8</td>
+        </tr>
+
+        <tr>
+            <td>Cell 9</td>
+            <td>Cell 10</td>
+        </tr>
+    </tbody>
+</table>
 
 </body>
-
 </html>
