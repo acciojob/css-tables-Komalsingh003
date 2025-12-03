@@ -8,7 +8,7 @@
 <style>
     table {
         border-collapse: separate;
-        border-spacing: 0 10px; /* space between rows */
+        border-spacing: 0 10px;
         margin: 40px auto;
         font-family: Arial, sans-serif;
         width: 500px;
@@ -16,24 +16,20 @@
 
     th, td {
         border: 1px solid #ccc;
-        border-radius: 8px;
-        padding: 12px;
-        background: #fff;
-        font-size: 18px;
+        border-radius: 5px;   /* FIXED */
+        padding: 8px;         /* FIXED */
+        background: #ffffff;
     }
 
     th {
         font-weight: bold;
         font-size: 20px;
-        background: #ffffff;
     }
 
-    /* odd rows */
     tbody tr:nth-child(odd) td {
         background-color: #f2f2f2;
     }
 
-    /* even rows */
     tbody tr:nth-child(even) td {
         background-color: #ffffff;
     }
